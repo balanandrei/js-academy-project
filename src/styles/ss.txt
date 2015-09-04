@@ -1,0 +1,23 @@
+<ul class="Menu InventoryMenu hlisting" itemscope="itemscope" itemtype="http://schema.org/ItemList"
+    ng-show="!showLiveCasino">
+    <li class="MenuItem item" id="gameCategory-ALL" ui-sref-active="ActiveMenuItem" itemprop="itemListElement">
+        <a class="MenuLink url" ui-sref="casino.category({category: 'all'})"
+           title="View all our games" itemprop="url">
+            <span class="icon i-eye photo" aria-hidden="true"></span>
+            <span class="ButtonText fn" itemprop="name">All games</span>
+        </a>
+    </li>
+    <li class="MenuItem item" id="gameCategory-FAVORITEGAMES" ui-sref-active="ActiveMenuItem"
+        itemprop="itemListElement">
+        <a class="MenuLink url" ui-sref="casino.category({category: 'favorite-games'})"
+           title="View your favorite games at NextCasino" itemprop="url">
+            <span class="icon i-star" aria-hidden="true"></span>
+            <span class="ButtonText fn" itemprop="name">My Favorites</span>
+        </a>
+    </li>
+</ul>
+
+
+...........................
+
+
