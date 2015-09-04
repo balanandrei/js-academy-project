@@ -16,7 +16,14 @@
                 <span class="ButtonText fn" itemprop="name">My Favorites</span>
             </a>
         </li>
-        <display-category ng-repeat="category in categList"></display-category>
+        <li ng-repeat="category in categList" class="MenuItem item" id="gameCategory-{{category}}" ui-sref-active="ActiveMenuItem"
+    itemprop="itemListElement">
+            <a class="MenuLink url" ui-sref=""
+               title="View your favorite games at NextCasino" itemprop="url">
+                <span class="icon i-star" aria-hidden="true"></span>
+                <span class="ButtonText fn" itemprop="name">{{category}}</span>
+            </a>
+        </li>
     </ul>
     <div class="CasinoGames" ng-controller="MainCtrl">
         <form class="Form CasinoControls Container" id="casinoControls" name="casinoControls"

@@ -7,10 +7,7 @@ export default angular.module('state.casino', [])
                     templateUrl: require('../partials/header.html')
                 },
                 content: {
-                    templateUrl: require('./casino.html'),
-                    controller: function(){
-                        console.log('casino loaded')
-                    }
+                    templateUrl: require('./casino.html')
                 },
                 footer: {
                     templateUrl: require('../partials/footer.html')
